@@ -3,7 +3,7 @@ import { React, useEffect, useState } from "react";
 import "./App.css";
 import MemeCard from "./MemeCard";
 
-const API_URL = "https://meme-api.herokuapp.com/gimme/48";
+const API_URL = "https://meme-api.herokuapp.com/gimme/12";
 
 const App = () => {
   const [memes, setMemes] = useState([]);

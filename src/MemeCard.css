@@ -52,4 +52,7 @@
   .meme {
     height: auto;
   }
+  .meme .image img:hover {
+    transform: scale(1);
+  }
 }

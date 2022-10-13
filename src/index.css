@@ -3,10 +3,6 @@
   padding: 0;
 }
 
-html {
-  font-family: cursive;
-}
-
 :root {
   --black: #000;
   --white: #fff;

@@ -1,25 +1,46 @@
-import logo from './logo.svg';
-import './App.css';
+import { React, useEffect, useState } from "react";
 
-function App() {
+import "./App.css";
+import MemeCard from "./MemeCard";
+
+const API_URL = "https://meme-api.herokuapp.com/gimme/48";
+
+const App = () => {
+  const [memes, setMemes] = useState([]);
+  const getMemes = async () => {
+    const response = await fetch(API_URL);
+    const data = await response.json();
+    setMemes(data.memes);
+  };
+
+  useEffect(() => {
+    getMemes();
+  }, []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="header">
+        <h1>Memes Generator</h1>
+      </div>
+      {memes?.length > 0 ? (
+        <>
+          <div className="memes">
+            {memes.map((meme) => (
+              <MemeCard meme={meme}></MemeCard>
+            ))}
+          </div>
+          <div className="footer">
+            <button onClick={() => window.location.reload()}>Refresh</button>
+            <footer>&copy; Copyright {new Date().getFullYear()} MR-Addict</footer>
+          </div>
+        </>
+      ) : (
+        <div>
+          <h2>Memes On The Way...</h2>
+        </div>
+      )}
     </div>
   );
-}
+};
 
 export default App;

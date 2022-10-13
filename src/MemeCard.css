@@ -1,0 +1,55 @@
+.meme {
+  height: 370px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  background: var(--grey);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* meme */
+.meme .image img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.meme .image img:hover {
+  transform: scale(1.05);
+}
+
+.meme .text {
+  width: 100%;
+}
+
+.meme .details {
+  width: 100%;
+  color: var(--light-grey);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.meme .details .likes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.meme .details .likes img {
+  height: 18px;
+}
+
+@media (max-width: 650px) {
+  .meme {
+    height: auto;
+  }
+}

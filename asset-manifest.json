@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "https://mr-addict.github.io/memes/static/css/main.e5810856.css",
-    "main.js": "https://mr-addict.github.io/memes/static/js/main.9e3a56ad.js",
+    "main.css": "https://mr-addict.github.io/memes/static/css/main.086bf325.css",
+    "main.js": "https://mr-addict.github.io/memes/static/js/main.e924f946.js",
     "index.html": "https://mr-addict.github.io/memes/index.html",
     "static/media/likes.svg": "https://mr-addict.github.io/memes/static/media/likes.7a29b261b6d1d09ad57f1f21e292fc75.svg",
-    "main.e5810856.css.map": "https://mr-addict.github.io/memes/static/css/main.e5810856.css.map",
-    "main.9e3a56ad.js.map": "https://mr-addict.github.io/memes/static/js/main.9e3a56ad.js.map"
+    "main.086bf325.css.map": "https://mr-addict.github.io/memes/static/css/main.086bf325.css.map",
+    "main.e924f946.js.map": "https://mr-addict.github.io/memes/static/js/main.e924f946.js.map"
   },
   "entrypoints": [
-    "static/css/main.e5810856.css",
-    "static/js/main.9e3a56ad.js"
+    "static/css/main.086bf325.css",
+    "static/js/main.e924f946.js"
   ]
 }

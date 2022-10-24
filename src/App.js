@@ -1,4 +1,4 @@
-import { React, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import "./App.css";
 import MemeCard from "./MemeCard";
@@ -18,20 +18,16 @@ const App = () => {
   }, []);
 
   return (
-    <div className="App">
-      <div className="header">
+    <div className='App'>
+      <div className='header'>
         <h1>Memes Generator</h1>
       </div>
       {memes?.length > 0 ? (
         <>
-          <div className="memes">
+          <div className='memes'>
             {memes.map((meme) => (
               <MemeCard meme={meme}></MemeCard>
             ))}
-          </div>
-          <div className="footer">
-            <button onClick={() => window.location.reload()}>Refresh</button>
-            <footer>&copy; Copyright {new Date().getFullYear()} MR-Addict</footer>
           </div>
         </>
       ) : (
@@ -39,6 +35,10 @@ const App = () => {
           <h2>Memes On The Way...</h2>
         </div>
       )}
+      <div className='footer'>
+        <button onClick={() => window.location.reload()}>Refresh</button>
+        <footer>&copy; Copyright {new Date().getFullYear()} MR-Addict</footer>
+      </div>
     </div>
   );
 };

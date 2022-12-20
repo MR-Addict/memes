@@ -6,7 +6,7 @@ import "./Memes.css";
 const Memes = () => {
   const [memes, setMemes] = useState([]);
   const getMemes = async () => {
-    const API_URL = "https://meme-api.herokuapp.com/gimme/12";
+    const API_URL = "https://meme-api.com/gimme/12";
     const response = await fetch(API_URL);
     const data = await response.json();
     setMemes(data.memes);
